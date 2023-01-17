@@ -1,8 +1,8 @@
-﻿string name = "Michał";
+﻿string name = "Ewa";
 string maleSuffix = "-latek";
 string femaleSuffix = "-latka";
-bool woman = false;
-var age = 13;
+bool woman = true;
+var age = 33;
 
 
 if (woman && age < 30)
