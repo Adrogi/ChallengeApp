@@ -1,67 +1,41 @@
-﻿var Adam = 0;
-var Beata = 0;
-var Cezary = 0;
-var Daria = 0;
-var Emil = 0;
-var Franciszek = 0;
+﻿using ChallengeApp;
 
-List<string> namesList = new List<string>();
-namesList.Add("Adam");
-namesList.Add("Beata");
-namesList.Add("Cezary");
-namesList.Add("Adam");
-namesList.Add("Emil");
-namesList.Add("Franciszek");
-namesList.Add("Adam");
-namesList.Add("Adam");
-namesList.Add("Daria");
-namesList.Add("Daria");
-namesList.Add("Emil");
-namesList.Add("Daria");
-namesList.Add("Daria");
-namesList.Add("Daria");
-namesList.Add("Emil");
-namesList.Add("Emil");
-namesList.Add("Daria");
-namesList.Add("Franciszek");
-namesList.Add("Daria");
-namesList.Add("Adam");
+Employee employee1 = new Employee("Jan", "Kowalski", "55");
+Employee employee2 = new Employee("Maciej", "Nowak", "23");
+Employee employee3 = new Employee("Marcin", "Maj", "17");
+
+employee1.AddScore(3);
+employee1.AddScore(2);
+employee1.AddScore(6);
+employee1.AddScore(1);
+employee1.AddScore(4);
+
+employee2.AddScore(5);
+employee2.AddScore(6);
+employee2.AddScore(1);
+employee2.AddScore(7);
+employee2.AddScore(2);
+
+employee3.AddScore(1);
+employee3.AddScore(9);
+employee3.AddScore(8);
+employee3.AddScore(4);
+employee3.AddScore(7);
 
 
-
-foreach ( var name in namesList)
+if (employee1.Result >= employee2.Result && employee1.Result >= employee3.Result)
 {
-    if (name == "Adam")
-    {
-        Adam++;
-    }
-    else if (name == "Beata")
-    {
-        Beata++;
-    }
-    else if (name == "Cezary")
-    {
-        Cezary++;
-    }
-    else if (name == "Daria")
-    {
-        Daria++;
-    }
-    else if (name == "Emil")
-    {
-        Emil++;
-    }
-    else
-    {
-        Franciszek++;
-    }
+    Console.WriteLine($"Najwyższy wynik osiągnął:\n {employee1.Name} \n {employee1.Surname} \n Wiek: {employee1.Age}\n zdobywając {employee1.Result} punktów");
+}
+else if (employee2.Result >= employee1.Result && employee2.Result >= employee3.Result)
+{
+    Console.WriteLine($"Najwyższy wynik osiągnął:\n {employee2.Name} \n {employee2.Surname} \n Wiek: {employee2.Age}\n zdobywając {employee2.Result} punktów\"");
+}
+else if (employee3.Result >= employee1.Result && employee3.Result >= employee2.Result)
+{
+    Console.WriteLine($"Najwyższy wynik osiągnął:\n {employee3.Name} \n {employee3.Surname} \n Wiek: {employee3.Age}\n zdobywając {employee3.Result} punktów\"");
 }
 
 
-Console.WriteLine("Adam:       " + Adam);
-Console.WriteLine("Beata:      " + Beata);
-Console.WriteLine("Cezary:     " + Cezary);
-Console.WriteLine("Daria:      " + Daria);
-Console.WriteLine("Emil:       " + Emil);
-Console.WriteLine("Franciszek: " + Franciszek);
+
 
