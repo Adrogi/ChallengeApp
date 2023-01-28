@@ -8,19 +8,21 @@ employee1.AddScore(3);
 employee1.AddScore(2);
 employee1.AddScore(6);
 employee1.AddScore(1);
-employee1.AddScore(4);
+employee1.AddScore(3);
 
 employee2.AddScore(5);
 employee2.AddScore(6);
 employee2.AddScore(1);
+employee2.PenaltyPoints(7);
 employee2.AddScore(7);
 employee2.AddScore(2);
 
-employee3.AddScore(1);
-employee3.AddScore(9);
-employee3.AddScore(8);
-employee3.AddScore(4);
-employee3.AddScore(7);
+employee3.AddScore(5);
+employee3.AddScore(5);
+employee3.AddScore(5);
+employee3.AddScore(5);
+employee3.AddScore(5);
+employee3.PenaltyPoints(10);
 
 
 if (employee1.Result >= employee2.Result && employee1.Result >= employee3.Result)

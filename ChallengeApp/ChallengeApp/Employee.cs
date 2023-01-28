@@ -29,5 +29,9 @@ namespace ChallengeApp
         {
             this.score.Add(score);
         }
+        public void PenaltyPoints(int score)
+        {
+            this.score.Add(-score);
+        }
     }
 }
